@@ -144,8 +144,11 @@ Configure these production values:
   deployed Vercel origin (comma-separated origins are supported); and the
   three `CLOUDINARY_*` credentials. Render generates `SECRET_KEY` in the
   Blueprint. Keep `APP_ENV=production`.
-- **Vercel:** set `VITE_API_BASE_URL` to the Render API origin followed by
-  `/api` (for example, `https://your-api.onrender.com/api`).
+- **Vercel:** `frontend/vercel.json` proxies `/api/*` requests to the Render
+  service. If using a different Render service URL, update the API rewrite
+  destination there and redeploy. Alternatively, set `VITE_API_BASE_URL` to
+  the Render API origin followed by `/api` and configure the matching CORS
+  origin on Render.
 - **Supabase:** use a PostgreSQL connection string supported by psycopg2 and
   require SSL for external connections.
 
