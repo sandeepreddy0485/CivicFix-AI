@@ -155,6 +155,10 @@ instead of the ephemeral Render filesystem. The AI model remains optional; if
 no trained weights are supplied, predictions still use the disclosed
 rule-based fallback and are not image-based AI classifications.
 
+The production backend omits the large PyTorch runtime packages by default.
+If you later deploy trained weights at `AI_MODEL_PATH`, update the Render
+build command to also install `backend/requirements-ai.txt`.
+
 Before deploying, connect only this project directory to a dedicated Git
 repository. Do not push from a parent directory that contains unrelated
 personal projects or files.
