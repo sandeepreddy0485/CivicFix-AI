@@ -1,5 +1,12 @@
 # CivicFix AI
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-CivicFix%20AI-198754)](https://civic-fix-ai-dun.vercel.app/)
+[![API Health](https://img.shields.io/badge/API-Render-6f42c1)](https://civicfix-ai-api-d5j9.onrender.com/health)
+
+**Live website:** https://civic-fix-ai-dun.vercel.app/
+
+**API documentation:** https://civicfix-ai-api-d5j9.onrender.com/docs
+
 AI-powered civic issue reporting and management system. Citizens report
 problems (garbage, water leakage, road damage, broken streetlights,
 drainage blockage) by uploading a photo; the system classifies the issue,
